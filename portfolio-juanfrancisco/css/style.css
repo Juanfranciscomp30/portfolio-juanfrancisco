@@ -1,0 +1,811 @@
+/* ===============================================
+   RESET BASICO
+   Quito los margenes y paddings por defecto
+   que pone cada navegador, para empezar de cero
+   =============================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0e1a24;
+  color: #ecf2f6;
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ===============================================
+   BARRA DE NAVEGACION
+   =============================================== */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #0e1a24;
+  border-bottom: 1px solid #2a4152;
+}
+
+.nav-brand {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+  color: #ecf2f6;
+}
+
+.nav-brand .prompt {
+  color: #4fd8c4;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-link {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  color: #93a9b8;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: #ff9d4d;
+}
+
+/* boton hamburguesa para movil, oculto en escritorio */
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  width: 22px;
+  height: 2px;
+  background-color: #ecf2f6;
+}
+
+/* ===============================================
+   SECCION HERO (inicio)
+   =============================================== */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 140px 30px 100px 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #93a9b8;
+  margin-bottom: 25px;
+}
+
+.eyebrow .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #4fd8c4;
+  margin-right: 8px;
+}
+
+/* caja que simula una terminal */
+.terminal {
+  max-width: 550px;
+  width: 100%;
+  background-color: #142430;
+  border: 1px solid #2a4152;
+  border-radius: 8px;
+  margin-bottom: 35px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+}
+
+.terminal-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  background-color: #1b2e3b;
+  border-bottom: 1px solid #2a4152;
+}
+
+.tdot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.tdot.r { background-color: #ff6159; }
+.tdot.y { background-color: #ffbd2e; }
+.tdot.g { background-color: #28c840; }
+
+.terminal-title {
+  margin-left: 8px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #93a9b8;
+}
+
+.terminal-body {
+  padding: 18px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 14px;
+  min-height: 70px;
+}
+
+.tprompt { color: #4fd8c4; }
+.tpath { color: #93a9b8; }
+.tcmd { color: #ecf2f6; }
+.cursor { color: #ff9d4d; }
+.tout { color: #93a9b8; margin-top: 10px; }
+.tout .accent { color: #ff9d4d; }
+
+.hero-title {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.1;
+  margin-bottom: 18px;
+}
+
+.hero-title span {
+  color: #ff9d4d;
+}
+
+.hero-role {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 18px;
+  color: #4fd8c4;
+  margin-bottom: 20px;
+}
+
+.hero-lead {
+  max-width: 550px;
+  color: #93a9b8;
+  margin-bottom: 35px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 15px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #ff9d4d;
+  color: #1a0f00;
+}
+
+.btn-primary:hover {
+  background-color: #ffb06b;
+  transform: translateY(-2px);
+}
+
+.btn-ghost {
+  border-color: #2a4152;
+  color: #ecf2f6;
+}
+
+.btn-ghost:hover {
+  border-color: #4fd8c4;
+  color: #4fd8c4;
+  transform: translateY(-2px);
+}
+
+/* iconos de redes sociales al lado derecho, en escritorio */
+.hero-side {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.hero-side a {
+  font-size: 20px;
+  color: #93a9b8;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.hero-side a:hover {
+  color: #4fd8c4;
+  transform: translateY(-3px);
+}
+
+.hero-side-line {
+  width: 1px;
+  height: 70px;
+  background-color: #2a4152;
+}
+
+.scroll-cue {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 24px;
+  color: #93a9b8;
+}
+
+/* ===============================================
+   ESTRUCTURA COMUN DE CADA SECCION
+   =============================================== */
+main > section {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 100px 30px;
+}
+
+.section-index {
+  font-family: 'JetBrains Mono', monospace;
+  color: #ff9d4d;
+  font-size: 14px;
+}
+
+.section-head {
+  margin-bottom: 50px;
+}
+
+.section-head h2 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin-top: 8px;
+}
+
+.section-head h2 span {
+  color: #ff9d4d;
+}
+
+.section-sub {
+  color: #93a9b8;
+  margin-top: 10px;
+  max-width: 500px;
+}
+
+/* elementos que aparecen con un pequeño fade cuando entran en pantalla */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===============================================
+   SECCION SOBRE MI
+   =============================================== */
+.about-grid {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about-avatar {
+  width: 200px;
+}
+
+.avatar-mark {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 25px;
+  background-color: #ff9d4d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  color: #0e1a24;
+}
+
+.avatar-mark img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.about-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.about-tags li {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  padding: 6px 12px;
+  border: 1px solid #2a4152;
+  border-radius: 20px;
+  color: #93a9b8;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.about-tags li:hover {
+  border-color: #ff9d4d;
+  color: #ecf2f6;
+}
+
+.about-content {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-content p {
+  color: #93a9b8;
+  margin-bottom: 16px;
+  max-width: 620px;
+}
+
+.about-note {
+  color: #ecf2f6 !important;
+}
+
+.about-extra {
+  font-size: 14px;
+  color: #93a9b8;
+  margin-top: 10px;
+}
+
+.about-extra i {
+  color: #4fd8c4;
+}
+
+/* ===============================================
+   SECCION TRAYECTORIA (las 3 capas)
+   =============================================== */
+.stack-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stack-layer {
+  background-color: #1b2e3b;
+  border: 1px solid #2a4152;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: border-color 0.2s ease;
+}
+
+.stack-layer:hover {
+  border-color: #4fd8c4;
+}
+
+.layer-head {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.layer-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(79, 216, 196, 0.15);
+  color: #4fd8c4;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.stack-layer[data-layer="3"] .layer-icon {
+  background-color: rgba(255, 157, 77, 0.15);
+  color: #ff9d4d;
+}
+
+.layer-heading {
+  flex: 1;
+}
+
+.layer-eyebrow {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #93a9b8;
+}
+
+.layer-heading h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+}
+
+.layer-toggle {
+  font-size: 20px;
+  color: #93a9b8;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* cuando la capa esta abierta, giramos la flecha */
+.stack-layer.open .layer-toggle {
+  transform: rotate(180deg);
+  color: #4fd8c4;
+}
+
+/* el contenido esta oculto por defecto y solo se ve si tiene la clase open */
+.layer-body {
+  display: none;
+  border-top: 1px solid #2a4152;
+}
+
+.stack-layer.open .layer-body {
+  display: block;
+}
+
+.entry {
+  padding: 18px 20px;
+  border-bottom: 1px dashed #2a4152;
+}
+
+.entry:last-child {
+  border-bottom: none;
+}
+
+.entry-meta {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 6px;
+  flex-wrap: wrap;
+}
+
+.entry-period {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #4fd8c4;
+}
+
+.entry-tag {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #93a9b8;
+  border: 1px solid #2a4152;
+  border-radius: 20px;
+  padding: 2px 8px;
+}
+
+.entry h4 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.entry p {
+  color: #93a9b8;
+  font-size: 14px;
+  max-width: 620px;
+}
+
+/* ===============================================
+   SECCION STACK TECNICO
+   =============================================== */
+.tech-grid {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.tech-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.tech-col h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #4fd8c4;
+  margin-bottom: 16px;
+}
+
+.tech-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-list li {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  background-color: #1b2e3b;
+  border: 1px solid #2a4152;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.tech-list li:hover {
+  border-color: #ff9d4d;
+  transform: translateY(-2px);
+}
+
+.lang-block {
+  max-width: 500px;
+}
+
+.lang-block h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  color: #4fd8c4;
+  margin-bottom: 16px;
+}
+
+.lang-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 14px;
+}
+
+.lang-name {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  width: 80px;
+}
+
+.lang-bar {
+  flex: 1;
+  height: 6px;
+  border-radius: 10px;
+  background-color: #1b2e3b;
+  border: 1px solid #2a4152;
+  overflow: hidden;
+}
+
+.lang-fill {
+  height: 100%;
+  background-color: #4fd8c4;
+}
+
+.lang-level {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #93a9b8;
+  white-space: nowrap;
+}
+
+/* ===============================================
+   SECCION CONTACTO
+   =============================================== */
+.contact-grid {
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.contact-info {
+  flex: 1;
+  min-width: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border: 1px solid #2a4152;
+  border-radius: 10px;
+  background-color: #1b2e3b;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.contact-item:hover {
+  border-color: #ff9d4d;
+  transform: translateX(4px);
+}
+
+.contact-item i {
+  font-size: 22px;
+  color: #4fd8c4;
+}
+
+.contact-item span {
+  display: block;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #93a9b8;
+}
+
+.contact-item strong {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.contact-form {
+  flex: 1.3;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.field {
+  flex: 1;
+  min-width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.field label {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #93a9b8;
+}
+
+.field input,
+.field textarea {
+  background-color: #1b2e3b;
+  border: 1px solid #2a4152;
+  border-radius: 8px;
+  padding: 12px;
+  color: #ecf2f6;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  transition: border-color 0.2s ease;
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: #4fd8c4;
+  outline: none;
+}
+
+.contact-form .btn {
+  align-self: flex-start;
+  border: none;
+}
+
+.form-note {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  color: #4fd8c4;
+}
+
+/* ===============================================
+   PIE DE PAGINA
+   =============================================== */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-top: 1px solid #2a4152;
+  color: #93a9b8;
+  font-size: 13px;
+}
+
+.footer-top {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1px solid #2a4152;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.footer-top:hover {
+  border-color: #ff9d4d;
+  transform: translateY(-3px);
+}
+
+/* ===============================================
+   RESPONSIVE - pantallas pequeñas (movil)
+   =============================================== */
+@media (max-width: 640px) {
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: #142430;
+    border-left: 1px solid #2a4152;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    padding: 0 35px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .hero-side {
+    display: none;
+  }
+
+  main > section {
+    padding: 80px 20px;
+  }
+
+  .footer {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}

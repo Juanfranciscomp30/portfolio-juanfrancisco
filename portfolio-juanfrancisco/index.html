@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Juan Francisco Morales Plaza — Desarrollador Frontend & Analista de Datos</title>
+<meta name="description" content="Portfolio de Juan Francisco Morales Plaza. Desarrollador Frontend y Analista de Datos en Málaga.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230E1A24%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 font-family=%22monospace%22 fill=%22%23FF9D4D%22 text-anchor=%22middle%22>J</text></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#inicio" class="nav-brand"><span class="prompt">~/</span>juanfrancisco</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <nav class="nav-links" id="navLinks">
+    <a href="#inicio" class="nav-link active" data-nav>inicio</a>
+    <a href="#sobre-mi" class="nav-link" data-nav>sobre-mí</a>
+    <a href="#trayectoria" class="nav-link" data-nav>trayectoria</a>
+    <a href="#stack" class="nav-link" data-nav>stack</a>
+    <a href="#contacto" class="nav-link" data-nav>contacto</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <p class="eyebrow"><span class="dot"></span>disponible para nuevos retos</p>
+
+      <div class="terminal" role="img" aria-label="Terminal mostrando la presentación de Juan Francisco">
+        <div class="terminal-bar">
+          <span class="tdot r"></span><span class="tdot y"></span><span class="tdot g"></span>
+          <span class="terminal-title">zsh — whoami</span>
+        </div>
+        <div class="terminal-body">
+          <p class="tline"><span class="tprompt">jfmp@portfolio</span><span class="tpath"> ~ %</span> <span class="tcmd" id="typedCmd"></span><span class="cursor" id="cmdCursor">▌</span></p>
+          <div id="typedOutput" class="tout"></div>
+        </div>
+      </div>
+
+      <h1 class="hero-title">
+        Juan Francisco<br><span>Morales Plaza</span>
+      </h1>
+      <h2 class="hero-role">Desarrollador Frontend &amp; Analista de Datos</h2>
+      <p class="hero-lead">
+        Base técnica en sistemas y redes, especializado en construir interfaces sólidas
+        y en automatizar y analizar datos para que el trabajo repetitivo lo haga la máquina.
+        Con sede en Alhaurín el Grande, Málaga.
+      </p>
+
+      <div class="hero-actions">
+        <a href="CV_Juan_Francisco.pdf" class="btn btn-primary" download>
+          <i class='bx bx-download'></i> Descargar CV
+        </a>
+        <a href="#contacto" class="btn btn-ghost">Hablemos</a>
+      </div>
+    </div>
+
+    <div class="hero-side">
+      <a href="https://www.linkedin.com/in/juan-francisco-morales-plaza-383115254/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+      <a href="https://github.com/Juanfranciscomp30" target="_blank" rel="noopener" aria-label="GitHub"><i class='bx bxl-github'></i></a>
+      <a href="mailto:juanfranciscomoralesplaza30@gmail.com" aria-label="Email"><i class='bx bxl-gmail'></i></a>
+      <span class="hero-side-line"></span>
+    </div>
+
+    <a href="#sobre-mi" class="scroll-cue" aria-label="Bajar a la siguiente sección">
+      <i class='bx bx-chevron-down'></i>
+    </a>
+  </section>
+
+  <!-- SOBRE MI -->
+  <section class="about" id="sobre-mi">
+    <div class="section-head reveal">
+      <span class="section-index">01</span>
+      <h2>Sobre <span>mí</span></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-avatar reveal">
+        <div class="avatar-mark"><img src="images/portfolioJF.jpg" alt="JF"></div>
+        <ul class="about-tags">
+          <li>Proactivo</li>
+          <li>Curioso</li>
+          <li>Resolutivo</li>
+          <li>Trabajo en equipo</li>
+          <li>Humilde</li>
+          <li>Disponibilidad total</li>
+          <li>Carné de conducir</li>
+        </ul>
+      </div>
+
+      <div class="about-content reveal">
+        <p>
+          Cuento con una sólida base técnica —Sistemas Microinformáticos y Redes, y
+          Desarrollo de Aplicaciones Web— y experiencia integral en el desarrollo de
+          aplicaciones y en el análisis de datos. Mi enfoque va más allá de escribir
+          código: me apasiona participar en el ciclo de vida completo de los proyectos,
+          proponer soluciones y automatizar flujos de trabajo que optimicen la eficiencia
+          operativa.
+        </p>
+        <p>
+          Me defino como un profesional proactivo, curioso y resolutivo, con capacidad
+          para integrarme en equipos y adaptarme rápido a nuevas tecnologías. Busco retos
+          que me permitan seguir aprendiendo entre el desarrollo orientado a usuario y la
+          complejidad de la ingeniería de datos.
+        </p>
+        <p class="about-note">
+          Fuera del código: deporte y curiosidad por aprender cosas nuevas cada día —
+          es lo que me mantiene con la cabeza despejada y con ganas de asumir el siguiente
+          reto.
+        </p>
+        <p class="about-extra">
+          <i class='bx bx-certification'></i> Carta de recomendación disponible (Tour10) &nbsp;·&nbsp;
+          <i class='bx bx-badge-check'></i> Certificaciones en LinkedIn
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAYECTORIA — STACK DE SISTEMA (elemento firma) -->
+  <section class="journey" id="trayectoria">
+    <div class="section-head reveal">
+      <span class="section-index">02</span>
+      <h2>Mi <span>trayectoria</span></h2>
+      <p class="section-sub">Leída de abajo arriba, tal y como se construyó: primero la base de sistemas, luego el desarrollo web, y ahora datos.</p>
+    </div>
+
+    <div class="stack-wrap reveal">
+      <div class="stack-rail" aria-hidden="true"></div>
+
+      <!-- capa 3 (arriba, más reciente) -->
+      <article class="stack-layer" data-layer="3" tabindex="0">
+        <div class="layer-head">
+          <span class="layer-icon"><i class='bx bx-data'></i></span>
+          <div class="layer-heading">
+            <span class="layer-eyebrow">capa 03 · actual</span>
+            <h3>Datos &amp; Automatización</h3>
+          </div>
+          <span class="layer-toggle"><i class='bx bx-chevron-down'></i></span>
+        </div>
+        <div class="layer-body">
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-period">2025 — 2026</span>
+              <span class="entry-tag">Experiencia</span>
+            </div>
+            <h4>Data Engineering — Opplus</h4>
+            <p>Automatizaciones con Google Apps Script y Google Colab, notebooks en
+              Python, consultas SQL y trabajo con servicios AWS. Gestión del trabajo con
+              herramientas de organización de tareas.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- capa 2 -->
+      <article class="stack-layer" data-layer="2" tabindex="0">
+        <div class="layer-head">
+          <span class="layer-icon"><i class='bx bx-code-alt'></i></span>
+          <div class="layer-heading">
+            <span class="layer-eyebrow">capa 02</span>
+            <h3>Desarrollo Web</h3>
+          </div>
+          <span class="layer-toggle"><i class='bx bx-chevron-down'></i></span>
+        </div>
+        <div class="layer-body">
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-period">2025</span>
+              <span class="entry-tag">Experiencia</span>
+            </div>
+            <h4>Desarrollador Full Stack — Tour10</h4>
+            <p>Desarrollo de funcionalidades con AngularJS, Bootstrap y Java. Gestión de
+              tareas con Jira, control de versiones con Bitbucket, documentación técnica
+              con Confluence y flujo de trabajo con GitFlow.</p>
+          </div>
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-period">2023 — 2025</span>
+              <span class="entry-tag">Educación</span>
+            </div>
+            <h4>Grado Superior en Desarrollo de Aplicaciones Web</h4>
+            <p>Primer curso en Medac Nova (Málaga), segundo curso en IES Gerald Brenan
+              (Alhaurín de la Torre). Especial interés por el frontend, formación
+              complementaria por cuenta propia en esa dirección.</p>
+          </div>
+        </div>
+      </article>
+
+      <!-- capa 1 (base) -->
+      <article class="stack-layer" data-layer="1" tabindex="0">
+        <div class="layer-head">
+          <span class="layer-icon"><i class='bx bx-server'></i></span>
+          <div class="layer-heading">
+            <span class="layer-eyebrow">capa 01 · base</span>
+            <h3>Sistemas &amp; Redes</h3>
+          </div>
+          <span class="layer-toggle"><i class='bx bx-chevron-down'></i></span>
+        </div>
+        <div class="layer-body">
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-period">2022</span>
+              <span class="entry-tag">Experiencia</span>
+            </div>
+            <h4>Técnico Informático — Tienda física</h4>
+            <p>Reparación de equipos y actualización de sistemas. Atención al cliente y
+              soporte técnico presencial.</p>
+          </div>
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-period">2023</span>
+              <span class="entry-tag">Experiencia · Erasmus</span>
+            </div>
+            <h4>Técnico de Hardware — Geo PC (Salerno, Italia)</h4>
+            <p>Prácticas de 3 meses: montaje de equipos de sobremesa y portátiles,
+              instalación de drivers, gestión de actualizaciones y copias de seguridad.
+              Mejora del inglés y contacto con el italiano.</p>
+          </div>
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-period">2021 — 2023</span>
+              <span class="entry-tag">Educación</span>
+            </div>
+            <h4>Grado Medio en Sistemas Microinformáticos y Redes</h4>
+            <p>IES Gerald Brenan (Alhaurín de la Torre). Formación orientada a hardware
+              con nociones de software (HTML, CSS y JavaScript) que marcó el rumbo de mi
+              carrera.</p>
+          </div>
+          <div class="entry">
+            <div class="entry-meta">
+              <span class="entry-period">2017 — 2021</span>
+              <span class="entry-tag">Educación</span>
+            </div>
+            <h4>Educación Secundaria Obligatoria</h4>
+            <p>IES Antonio Gala (Alhaurín el Grande).</p>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- STACK TECNOLOGICO -->
+  <section class="techstack" id="stack">
+    <div class="section-head reveal">
+      <span class="section-index">03</span>
+      <h2>Stack <span>técnico</span></h2>
+    </div>
+
+    <div class="tech-grid reveal">
+      <div class="tech-col">
+        <h3><i class='bx bx-window-alt'></i> Frontend</h3>
+        <ul class="tech-list">
+          <li>Angular</li><li>React</li><li>Vue.js</li><li>TypeScript</li>
+          <li>HTML5</li><li>CSS3</li><li>Bootstrap</li>
+        </ul>
+      </div>
+      <div class="tech-col">
+        <h3><i class='bx bx-server'></i> Backend</h3>
+        <ul class="tech-list">
+          <li>Java</li><li>PHP</li><li>Laravel</li><li>Python</li><li>SQL</li>
+        </ul>
+      </div>
+      <div class="tech-col">
+        <h3><i class='bx bx-terminal'></i> Herramientas</h3>
+        <ul class="tech-list">
+          <li>Git</li><li>GitHub</li><li>Bitbucket</li><li>Jira</li>
+          <li>Confluence</li><li>GitFlow</li><li>Google Apps Script</li><li>AWS</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="lang-block reveal">
+      <h3><i class='bx bx-world'></i> Idiomas</h3>
+      <div class="lang-row">
+        <span class="lang-name">Español</span>
+        <div class="lang-bar"><div class="lang-fill" style="--fill:100%"></div></div>
+        <span class="lang-level">Nativo</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-name">Inglés</span>
+        <div class="lang-bar"><div class="lang-fill" style="--fill:65%"></div></div>
+        <span class="lang-level">B2 — reforzado en Erasmus</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="contact" id="contacto">
+    <div class="section-head reveal">
+      <span class="section-index">04</span>
+      <h2>Hablemos</h2>
+      <p class="section-sub">¿Un proyecto, una vacante o simplemente charlar de tecnología? Escríbeme.</p>
+    </div>
+
+    <div class="contact-grid reveal">
+      <div class="contact-info">
+        <a class="contact-item" href="mailto:juanfranciscomoralesplaza30@gmail.com">
+          <i class='bx bxl-gmail'></i>
+          <div><span>Email</span><strong>juanfranciscomoralesplaza30@gmail.com</strong></div>
+        </a>
+        <a class="contact-item" href="tel:+34663553936">
+          <i class='bx bx-phone'></i>
+          <div><span>Teléfono</span><strong>663 553 936</strong></div>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/juan-francisco-morales-plaza-383115254/" target="_blank" rel="noopener">
+          <i class='bx bxl-linkedin'></i>
+          <div><span>LinkedIn</span><strong>juan-francisco-morales-plaza</strong></div>
+        </a>
+        <a class="contact-item" href="https://github.com/Juanfranciscomp30" target="_blank" rel="noopener">
+          <i class='bx bxl-github'></i>
+          <div><span>GitHub</span><strong>Juanfranciscomp30</strong></div>
+        </a>
+        <div class="contact-item static">
+          <i class='bx bx-map'></i>
+          <div><span>Ubicación</span><strong>Alhaurín el Grande, Málaga</strong></div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="field">
+            <label for="name">nombre</label>
+            <input type="text" id="name" name="name" required autocomplete="off">
+          </div>
+          <div class="field">
+            <label for="email">email</label>
+            <input type="email" id="email" name="email" required autocomplete="off">
+          </div>
+        </div>
+        <div class="field">
+          <label for="subject">asunto</label>
+          <input type="text" id="subject" name="subject" required autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="message">mensaje</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          <i class='bx bx-send'></i> Enviar mensaje
+        </button>
+        <p class="form-note" id="formNote"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Juan Francisco Morales Plaza.</p>
+  <a href="#inicio" class="footer-top" aria-label="Volver arriba"><i class='bx bx-up-arrow-alt'></i></a>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
