@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juan Francisco Morales Plaza — Desarrollador Frontend & Analista de Datos</title>
-<meta name="description" content="Portfolio de Juan Francisco Morales Plaza. Desarrollador Frontend y Analista de Datos en Málaga.">
+<title>Juan Francisco Morales Plaza — Desarrollador Frontend (Angular · React)</title>
+<meta name="description" content="Portfolio de Juan Francisco Morales Plaza, desarrollador Frontend (Angular, React, TypeScript) con base en Málaga. Proyectos, experiencia y contacto.">
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230E1A24%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 font-family=%22monospace%22 fill=%22%23FF9D4D%22 text-anchor=%22middle%22>J</text></svg>">
 
@@ -17,8 +17,6 @@
 </head>
 <body>
 
-<div class="grain"></div>
-
 <!-- NAV -->
 <header class="nav" id="nav">
   <a href="#inicio" class="nav-brand"><span class="prompt">~/</span>juanfrancisco</a>
@@ -29,6 +27,7 @@
     <a href="#inicio" class="nav-link active" data-nav>inicio</a>
     <a href="#sobre-mi" class="nav-link" data-nav>sobre-mí</a>
     <a href="#trayectoria" class="nav-link" data-nav>trayectoria</a>
+    <a href="#proyectos" class="nav-link" data-nav>proyectos</a>
     <a href="#stack" class="nav-link" data-nav>stack</a>
     <a href="#contacto" class="nav-link" data-nav>contacto</a>
   </nav>
@@ -55,11 +54,11 @@
       <h1 class="hero-title">
         Juan Francisco<br><span>Morales Plaza</span>
       </h1>
-      <h2 class="hero-role">Desarrollador Frontend &amp; Analista de Datos</h2>
+      <h2 class="hero-role">Desarrollador Frontend — Angular · React · TypeScript</h2>
       <p class="hero-lead">
         Base técnica en sistemas y redes, especializado en construir interfaces sólidas
-        y en automatizar y analizar datos para que el trabajo repetitivo lo haga la máquina.
-        Con sede en Alhaurín el Grande, Málaga.
+        con Angular y React, y en automatizar procesos de datos para que el trabajo
+        repetitivo lo haga la máquina. Con sede en Alhaurín el Grande, Málaga.
       </p>
 
       <div class="hero-actions">
@@ -117,11 +116,6 @@
           para integrarme en equipos y adaptarme rápido a nuevas tecnologías. Busco retos
           que me permitan seguir aprendiendo entre el desarrollo orientado a usuario y la
           complejidad de la ingeniería de datos.
-        </p>
-        <p class="about-note">
-          Fuera del código: deporte y curiosidad por aprender cosas nuevas cada día —
-          es lo que me mantiene con la cabeza despejada y con ganas de asumir el siguiente
-          reto.
         </p>
         <p class="about-extra">
           <i class='bx bx-certification'></i> Carta de recomendación disponible (Tour10) &nbsp;·&nbsp;
@@ -182,10 +176,11 @@
               <span class="entry-period">2025</span>
               <span class="entry-tag">Experiencia</span>
             </div>
-            <h4>Desarrollador Full Stack — Tour10</h4>
-            <p>Desarrollo de funcionalidades con AngularJS, Bootstrap y Java. Gestión de
-              tareas con Jira, control de versiones con Bitbucket, documentación técnica
-              con Confluence y flujo de trabajo con GitFlow.</p>
+            <h4>Desarrollador Full Stack (foco Frontend) — Tour10</h4>
+            <p>Refactoricé y migré componentes de una interfaz próxima a quedar obsoleta hacia
+              Angular Material, y desarrollé un nuevo filtro de búsqueda para el backoffice.
+              Gestión de tareas con Jira, control de versiones con Bitbucket, documentación
+              técnica con Confluence y flujo de trabajo con GitFlow.</p>
           </div>
           <div class="entry">
             <div class="entry-meta">
@@ -253,10 +248,59 @@
     </div>
   </section>
 
+  <!-- PROYECTOS -->
+  <section class="projects" id="proyectos">
+    <div class="section-head reveal">
+      <span class="section-index">03</span>
+      <h2>Proyectos <span>personales</span></h2>
+      <p class="section-sub">Código propio, fuera del trabajo, con el stack que quiero seguir usando.</p>
+    </div>
+
+    <div class="project-grid reveal">
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Gimnasio App</h3>
+          <span class="project-status wip">en desarrollo</span>
+        </div>
+        <p>PWA instalable para la gestión de un gimnasio: reservas de clases, tarifas por
+          días/semana y penalización automática por cancelaciones con menos de 3 horas de
+          antelación. Panel de administración para pagos, asistencia y alta de usuarios.</p>
+        <ul class="project-tags">
+          <li>Next.js 14</li><li>TypeScript</li><li>Tailwind CSS</li><li>Prisma</li>
+          <li>PostgreSQL (Supabase)</li><li>NextAuth</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/Juanfranciscomp30/gimnasio-app" target="_blank" rel="noopener">
+            <i class='bx bxl-github'></i> Ver código
+          </a>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-head">
+          <h3>Tienda de instrumentos musicales (TFG)</h3>
+          <span class="project-status live">completo</span>
+        </div>
+        <p>E-commerce completo desarrollado como Trabajo de Fin de Grado: catálogo con
+          búsqueda, carrito de compra, control de stock en tiempo real, comentarios en
+          producto, autenticación de usuarios y panel de administración con CRUD de
+          inventario.</p>
+        <ul class="project-tags">
+          <li>Laravel</li><li>PHP</li><li>JavaScript</li><li>Bootstrap</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://github.com/Juanfranciscomp30/TFG_JUAN_FRANCISCO" target="_blank" rel="noopener">
+            <i class='bx bxl-github'></i> Ver código
+          </a>
+        </div>
+      </article>
+    </div>
+  </section>
+
   <!-- STACK TECNOLOGICO -->
   <section class="techstack" id="stack">
     <div class="section-head reveal">
-      <span class="section-index">03</span>
+      <span class="section-index">04</span>
       <h2>Stack <span>técnico</span></h2>
     </div>
 
@@ -264,21 +308,29 @@
       <div class="tech-col">
         <h3><i class='bx bx-window-alt'></i> Frontend</h3>
         <ul class="tech-list">
-          <li>Angular</li><li>React</li><li>Vue.js</li><li>TypeScript</li>
-          <li>HTML5</li><li>CSS3</li><li>Bootstrap</li>
+          <li>Angular</li><li>Angular Material</li><li>React</li><li>Vue.js</li>
+          <li>Next.js</li><li>TypeScript</li><li>Tailwind CSS</li><li>HTML5</li>
+          <li>CSS3</li><li>Bootstrap</li>
         </ul>
       </div>
       <div class="tech-col">
         <h3><i class='bx bx-server'></i> Backend</h3>
         <ul class="tech-list">
-          <li>Java</li><li>PHP</li><li>Laravel</li><li>Python</li><li>SQL</li>
+          <li>Java</li><li>Node.js</li><li>PHP</li><li>Laravel</li><li>Prisma</li>
+          <li>Python</li><li>SQL</li>
+        </ul>
+      </div>
+      <div class="tech-col">
+        <h3><i class='bx bx-cloud'></i> Cloud &amp; Datos</h3>
+        <ul class="tech-list">
+          <li>AWS</li><li>Supabase</li><li>Vercel</li><li>Google Apps Script</li>
         </ul>
       </div>
       <div class="tech-col">
         <h3><i class='bx bx-terminal'></i> Herramientas</h3>
         <ul class="tech-list">
           <li>Git</li><li>GitHub</li><li>Bitbucket</li><li>Jira</li>
-          <li>Confluence</li><li>GitFlow</li><li>Google Apps Script</li><li>AWS</li>
+          <li>Confluence</li><li>GitFlow</li>
         </ul>
       </div>
     </div>
@@ -292,8 +344,8 @@
       </div>
       <div class="lang-row">
         <span class="lang-name">Inglés</span>
-        <div class="lang-bar"><div class="lang-fill" style="--fill:65%"></div></div>
-        <span class="lang-level">B2 — reforzado en Erasmus</span>
+        <div class="lang-bar"><div class="lang-fill" style="--fill:55%"></div></div>
+        <span class="lang-level">B1 (Cambridge)</span>
       </div>
     </div>
   </section>
@@ -301,7 +353,7 @@
   <!-- CONTACTO -->
   <section class="contact" id="contacto">
     <div class="section-head reveal">
-      <span class="section-index">04</span>
+      <span class="section-index">05</span>
       <h2>Hablemos</h2>
       <p class="section-sub">¿Un proyecto, una vacante o simplemente charlar de tecnología? Escríbeme.</p>
     </div>
@@ -360,7 +412,7 @@
 </main>
 
 <footer class="footer">
-  <p>© 2026 Juan Francisco Morales Plaza.</p>
+  <p>© 2026 Juan Francisco Morales Plaza. Diseñado y construido a mano.</p>
   <a href="#inicio" class="footer-top" aria-label="Volver arriba"><i class='bx bx-up-arrow-alt'></i></a>
 </footer>
 

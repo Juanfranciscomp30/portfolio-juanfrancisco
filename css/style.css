@@ -628,6 +628,106 @@ main > section {
 }
 
 /* ===============================================
+   SECCION PROYECTOS
+   =============================================== */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 22px;
+  background-color: #1b2e3b;
+  border: 1px solid #2a4152;
+  border-radius: 10px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.project-card:hover {
+  border-color: #4fd8c4;
+  transform: translateY(-3px);
+}
+
+.project-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.project-head h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.project-status {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 10.5px;
+  white-space: nowrap;
+  padding: 3px 9px;
+  border-radius: 20px;
+  border: 1px solid #2a4152;
+  color: #93a9b8;
+}
+
+.project-status.live {
+  color: #4fd8c4;
+  border-color: rgba(79, 216, 196, 0.4);
+}
+
+.project-status.wip {
+  color: #ff9d4d;
+  border-color: rgba(255, 157, 77, 0.4);
+}
+
+.project-card p {
+  color: #93a9b8;
+  font-size: 14px;
+  flex: 1;
+}
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.project-tags li {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11.5px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  background-color: #142430;
+  border: 1px solid #2a4152;
+  color: #93a9b8;
+}
+
+.project-links {
+  display: flex;
+  gap: 16px;
+}
+
+.project-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12.5px;
+  color: #ecf2f6;
+  border-bottom: 1px solid transparent;
+}
+
+.project-links a:hover {
+  color: #4fd8c4;
+  border-bottom-color: #4fd8c4;
+}
+
+/* ===============================================
    SECCION CONTACTO
    =============================================== */
 .contact-grid {
