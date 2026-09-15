@@ -727,6 +727,16 @@ main > section {
   border-bottom-color: #4fd8c4;
 }
 
+.project-note {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  color: #6c8494;
+}
+
+.project-note code {
+  color: #93a9b8;
+}
+
 /* ===============================================
    SECCION CONTACTO
    =============================================== */
