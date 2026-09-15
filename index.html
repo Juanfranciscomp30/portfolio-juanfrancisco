@@ -407,7 +407,10 @@
         </div>
       </div>
 
-      <form class="contact-form" id="contactForm" novalidate>
+      <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="9d8accb1-d1d6-4a9b-a3aa-b2ac3e4fb95c">
+        <input type="checkbox" name="botcheck" style="display:none">
+
         <div class="form-row">
           <div class="field">
             <label for="name">nombre</label>
@@ -426,7 +429,7 @@
           <label for="message">mensaje</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn btn-primary" id="formSubmitBtn">
           <i class='bx bx-send'></i> Enviar mensaje
         </button>
         <p class="form-note" id="formNote"></p>
