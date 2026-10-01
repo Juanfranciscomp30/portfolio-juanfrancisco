@@ -73,7 +73,7 @@ const cmdCursor = document.getElementById('cmdCursor');
 const outputText = document.getElementById('typedOutput');
 
 const comando = 'whoami';
-const respuesta = 'Frontend dev con base en sistemas y redes, especializado en construir interfaces sólidas y automatizar datos.';
+const respuesta = 'Frontend / Full Stack dev con base en sistemas y redes: construyo interfaces sólidas, automatizo datos e integro IA en mis proyectos.';
 
 let letraActual = 0;
 
