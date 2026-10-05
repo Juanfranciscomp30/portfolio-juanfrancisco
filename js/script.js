@@ -73,7 +73,7 @@ const cmdCursor = document.getElementById('cmdCursor');
 const outputText = document.getElementById('typedOutput');
 
 const comando = 'whoami';
-const respuesta = 'Frontend dev con base en sistemas y redes, especializado en construir interfaces sólidas y automatizar datos.';
+const respuesta = 'Frontend / Full Stack dev con base en sistemas y redes: construyo interfaces sólidas, automatizo datos e integro IA en mis proyectos.';
 
 let letraActual = 0;
 
@@ -115,24 +115,43 @@ document.querySelector('.stack-layer[data-layer="3"]').classList.add('open');
 
 /* ===============================================
    FORMULARIO DE CONTACTO
-   En vez de enviar el formulario a un servidor,
-   abrimos el correo del usuario con los datos rellenos
+   Enviamos los datos directamente por fetch a
+   Web3Forms, que reenvia el mensaje a mi email.
+   Asi no dependemos de que el visitante tenga un
+   cliente de correo configurado en su ordenador.
    =============================================== */
 const form = document.getElementById('contactForm');
 const formNote = document.getElementById('formNote');
+const submitBtn = document.getElementById('formSubmitBtn');
 
 form.addEventListener('submit', function (e) {
   e.preventDefault();
 
-  const nombre = document.getElementById('name').value;
-  const email = document.getElementById('email').value;
-  const asunto = document.getElementById('subject').value;
-  const mensaje = document.getElementById('message').value;
+  submitBtn.disabled = true;
+  formNote.textContent = 'Enviando mensaje...';
 
-  const cuerpoCorreo = mensaje + '\n\n— ' + nombre + ' (' + email + ')';
+  const datos = new FormData(form);
 
-  window.location.href = 'mailto:juanfranciscomoralesplaza30@gmail.com?subject=' + encodeURIComponent(asunto) + '&body=' + encodeURIComponent(cuerpoCorreo);
+  fetch('https://api.web3forms.com/submit', {
+    method: 'POST',
+    headers: { 'Accept': 'application/json' },
+    body: datos
+  })
+    .then(function (respuesta) {
+      return respuesta.json();
+    })
+    .then(function (resultado) {
+      submitBtn.disabled = false;
 
-  formNote.textContent = 'Abriendo tu cliente de correo...';
-  form.reset();
+      if (resultado.success) {
+        formNote.textContent = '¡Mensaje enviado! Te responderé lo antes posible.';
+        form.reset();
+      } else {
+        formNote.textContent = 'No se pudo enviar el mensaje. Prueba de nuevo o escríbeme a juanfranciscomoralesplaza30@gmail.com.';
+      }
+    })
+    .catch(function () {
+      submitBtn.disabled = false;
+      formNote.textContent = 'No se pudo enviar el mensaje. Prueba de nuevo o escríbeme a juanfranciscomoralesplaza30@gmail.com.';
+    });
 });

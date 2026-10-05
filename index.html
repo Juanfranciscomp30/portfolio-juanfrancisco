@@ -3,8 +3,35 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juan Francisco Morales Plaza — Desarrollador Frontend (Angular · React)</title>
-<meta name="description" content="Portfolio de Juan Francisco Morales Plaza, desarrollador Frontend (Angular, React, TypeScript) con base en Málaga. Proyectos, experiencia y contacto.">
+<title>Juan Francisco Morales Plaza — Desarrollador Frontend / Full Stack (Angular · React · IA)</title>
+<meta name="description" content="Portfolio de Juan Francisco Morales Plaza, desarrollador Frontend / Full Stack junior en Málaga: Angular, React, Next.js, TypeScript, Java, Python, SQL e integración de IA generativa (API de Claude). Proyectos, experiencia y contacto.">
+<meta name="author" content="Juan Francisco Morales Plaza">
+
+<!-- vista previa al compartir el enlace (LinkedIn, InfoJobs, WhatsApp...) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Juan Francisco Morales Plaza — Desarrollador Frontend / Full Stack">
+<meta property="og:description" content="Angular, React, Next.js y TypeScript. Proyectos con IA generativa integrada. Málaga · remoto.">
+<meta property="og:url" content="https://juanfranciscomp30.github.io/portfolio-juanfrancisco/">
+<meta property="og:image" content="https://juanfranciscomp30.github.io/portfolio-juanfrancisco/images/portfolioJF.jpg">
+<meta property="og:locale" content="es_ES">
+
+<!-- datos estructurados: ayudan a Google a entender quién soy -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Juan Francisco Morales Plaza",
+  "jobTitle": "Desarrollador Frontend / Full Stack",
+  "email": "mailto:juanfranciscomoralesplaza30@gmail.com",
+  "url": "https://juanfranciscomp30.github.io/portfolio-juanfrancisco/",
+  "address": { "@type": "PostalAddress", "addressLocality": "Alhaurín el Grande", "addressRegion": "Málaga", "addressCountry": "ES" },
+  "sameAs": [
+    "https://www.linkedin.com/in/juan-francisco-morales-plaza-383115254/",
+    "https://github.com/Juanfranciscomp30"
+  ],
+  "knowsAbout": ["Angular", "React", "Next.js", "TypeScript", "JavaScript", "Java", "Python", "SQL", "Inteligencia Artificial", "API de Claude (Anthropic)"]
+}
+</script>
 
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230E1A24%22/><text x=%2250%22 y=%2266%22 font-size=%2255%22 font-family=%22monospace%22 fill=%22%23FF9D4D%22 text-anchor=%22middle%22>J</text></svg>">
 
@@ -54,16 +81,20 @@
       <h1 class="hero-title">
         Juan Francisco<br><span>Morales Plaza</span>
       </h1>
-      <h2 class="hero-role">Desarrollador Frontend — Angular · React · TypeScript</h2>
+      <h2 class="hero-role">Desarrollador Frontend / Full Stack — Angular · React · TypeScript · IA</h2>
       <p class="hero-lead">
         Base técnica en sistemas y redes, especializado en construir interfaces sólidas
-        con Angular y React, y en automatizar procesos de datos para que el trabajo
-        repetitivo lo haga la máquina. Con sede en Alhaurín el Grande, Málaga.
+        con Angular y React, en automatizar procesos de datos y en integrar
+        <strong>inteligencia artificial generativa</strong> en aplicaciones reales.
+        Con sede en Alhaurín el Grande, Málaga.
       </p>
 
       <div class="hero-actions">
         <a href="CV_Juan_Francisco.pdf" class="btn btn-primary" download>
           <i class='bx bx-download'></i> Descargar CV
+        </a>
+        <a href="#destacado" class="btn btn-ghost">
+          <i class='bx bx-bot'></i> Ver proyecto con IA
         </a>
         <a href="#contacto" class="btn btn-ghost">Hablemos</a>
       </div>
@@ -76,9 +107,61 @@
       <span class="hero-side-line"></span>
     </div>
 
-    <a href="#sobre-mi" class="scroll-cue" aria-label="Bajar a la siguiente sección">
+    <a href="#destacado" class="scroll-cue" aria-label="Bajar a la siguiente sección">
       <i class='bx bx-chevron-down'></i>
     </a>
+  </section>
+
+  <!-- PROYECTO DESTACADO — lo primero que se ve después del hero -->
+  <section class="spotlight" id="destacado">
+    <div class="section-head reveal">
+      <span class="section-index">★ proyecto destacado</span>
+      <h2>Gimnasio App <span>+ asistente IA</span></h2>
+      <p class="section-sub">PWA real para el gimnasio de un familiar, con un asistente construido sobre la API de Claude.</p>
+    </div>
+
+    <article class="project-card featured spotlight-card reveal">
+      <a class="spotlight-media" href="https://gimnasio-app-livid.vercel.app/" target="_blank" rel="noopener">
+        <img src="images/gimnasio-ia.gif" alt="Demo del asistente IA: el socio genera su plan de entreno y nutrición, y el admin ve el resumen semanal y los avisos redactados por la IA" width="720" height="784" loading="lazy">
+      </a>
+      <div class="spotlight-body">
+          <div class="project-head">
+            <h3>Gimnasio App <span class="ai-badge"><i class='bx bx-bot'></i> con IA</span></h3>
+            <span class="project-status wip">en desarrollo</span>
+          </div>
+          <p>Aplicación web full stack para la gestión de un gimnasio: reservas de clases,
+            tarifas por días/semana y penalización automática por cancelaciones con menos de
+            3 horas de antelación. Panel de administración para pagos, asistencia y alta de
+            usuarios. Ahora con <strong>asistente de inteligencia artificial</strong> integrado
+            mediante la API de Claude (Anthropic):</p>
+          <ul class="ai-features">
+            <li><strong>Coach IA para el socio:</strong> a partir de un cuestionario (objetivo,
+              nivel, alimentación) genera su plan de entreno semanal según su tarifa y
+              sugerencias de nutrición.</li>
+            <li><strong>Resumen semanal para el admin:</strong> la IA analiza ocupación, pagos y
+              gastos y propone recomendaciones de negocio.</li>
+            <li><strong>Reactivación de socios:</strong> detecta socios que han dejado de venir o
+              con la cuota vencida y redacta un aviso que el admin revisa antes de enviar.</li>
+            <li><strong>Respuestas fiables y coste controlado:</strong> salidas estructuradas en
+              JSON (tool use) validadas con Zod, límite de usos por semana y caché de resultados.</li>
+          </ul>
+          <ul class="project-tags">
+            <li>Next.js 14</li><li>TypeScript</li><li>Tailwind CSS</li><li>Prisma</li>
+            <li>PostgreSQL (Supabase)</li><li>NextAuth</li>
+            <li class="tag-ai">API de Claude (Anthropic)</li><li class="tag-ai">IA generativa</li>
+            <li class="tag-ai">Zod</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://gimnasio-app-livid.vercel.app/" target="_blank" rel="noopener">
+              <i class='bx bx-link-external'></i> Probar la demo
+            </a>
+            <a href="https://github.com/Juanfranciscomp30/gimnasio-app#decisiones-técnicas" target="_blank" rel="noopener">
+              <i class='bx bxl-github'></i> Código y decisiones técnicas
+            </a>
+          </div>
+          <p class="project-note">Acceso demo — admin: <code>admin@demo.com</code> / <code>Demo1234</code> · usuario: <code>usuario@demo.com</code> / <code>Demo1234</code></p>
+      </div>
+    </article>
   </section>
 
   <!-- SOBRE MI -->
@@ -152,7 +235,7 @@
               <span class="entry-period">2025 — 2026</span>
               <span class="entry-tag">Experiencia</span>
             </div>
-            <h4>Data Engineering — Opplus</h4>
+            <h4>Data Engineer — Opplus</h4>
             <p>Automatizaciones con Google Apps Script y Google Colab, notebooks en
               Python, consultas SQL y trabajo con servicios AWS. Gestión del trabajo con
               herramientas de organización de tareas.</p>
@@ -259,29 +342,6 @@
     <div class="project-grid reveal">
       <article class="project-card">
         <div class="project-head">
-          <h3>Gimnasio App</h3>
-          <span class="project-status wip">en desarrollo</span>
-        </div>
-        <p>PWA instalable para la gestión de un gimnasio: reservas de clases, tarifas por
-          días/semana y penalización automática por cancelaciones con menos de 3 horas de
-          antelación. Panel de administración para pagos, asistencia y alta de usuarios.</p>
-        <ul class="project-tags">
-          <li>Next.js 14</li><li>TypeScript</li><li>Tailwind CSS</li><li>Prisma</li>
-          <li>PostgreSQL (Supabase)</li><li>NextAuth</li>
-        </ul>
-        <div class="project-links">
-          <a href="https://gimnasio-app.vercel.app" target="_blank" rel="noopener">
-            <i class='bx bx-link-external'></i> Ver demo
-          </a>
-          <a href="https://github.com/Juanfranciscomp30/gimnasio-app" target="_blank" rel="noopener">
-            <i class='bx bxl-github'></i> Ver código
-          </a>
-        </div>
-        <p class="project-note">Acceso demo — admin: <code>admin@demo.com</code> / <code>Demo1234</code> · usuario: <code>usuario@demo.com</code> / <code>Demo1234</code></p>
-      </article>
-
-      <article class="project-card">
-        <div class="project-head">
           <h3>travelXperience</h3>
           <span class="project-status live">completo</span>
         </div>
@@ -341,8 +401,15 @@
       <div class="tech-col">
         <h3><i class='bx bx-server'></i> Backend</h3>
         <ul class="tech-list">
-          <li>Java</li><li>Node.js</li><li>PHP</li><li>Laravel</li><li>Prisma</li>
-          <li>Python</li><li>SQL</li>
+          <li>Java</li><li>JavaScript</li><li>Node.js</li><li>PHP</li><li>Laravel</li>
+          <li>Prisma</li><li>Python</li><li>SQL</li><li>PostgreSQL</li><li>APIs REST</li>
+        </ul>
+      </div>
+      <div class="tech-col">
+        <h3><i class='bx bx-bot'></i> Inteligencia Artificial</h3>
+        <ul class="tech-list">
+          <li>API de Claude (Anthropic)</li><li>IA generativa / LLMs</li>
+          <li>Prompt engineering</li><li>Salidas estructuradas (JSON + Zod)</li>
         </ul>
       </div>
       <div class="tech-col">
@@ -407,7 +474,10 @@
         </div>
       </div>
 
-      <form class="contact-form" id="contactForm" novalidate>
+      <form class="contact-form" id="contactForm" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <input type="hidden" name="access_key" value="9d8accb1-d1d6-4a9b-a3aa-b2ac3e4fb95c">
+        <input type="checkbox" name="botcheck" style="display:none">
+
         <div class="form-row">
           <div class="field">
             <label for="name">nombre</label>
@@ -426,7 +496,7 @@
           <label for="message">mensaje</label>
           <textarea id="message" name="message" rows="5" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">
+        <button type="submit" class="btn btn-primary" id="formSubmitBtn">
           <i class='bx bx-send'></i> Enviar mensaje
         </button>
         <p class="form-note" id="formNote"></p>
