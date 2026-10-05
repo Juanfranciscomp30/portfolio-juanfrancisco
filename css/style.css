@@ -977,3 +977,43 @@ main > section {
     text-align: center;
   }
 }
+/* ===============================================
+   PROYECTO DESTACADO ARRIBA (justo después del hero)
+   Reutiliza .project-card.featured y añade el GIF
+   =============================================== */
+.spotlight-card {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: 30px;
+  align-items: start;
+}
+
+.spotlight-card:hover {
+  transform: none; /* tarjeta grande: sin el saltito del hover */
+}
+
+.spotlight-media {
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #2a4152;
+  background-color: #0e1a24;
+}
+
+.spotlight-media img {
+  width: 100%;
+  height: auto;
+}
+
+.spotlight-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+@media (max-width: 860px) {
+  .spotlight-card {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

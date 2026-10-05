@@ -93,6 +93,9 @@
         <a href="CV_Juan_Francisco.pdf" class="btn btn-primary" download>
           <i class='bx bx-download'></i> Descargar CV
         </a>
+        <a href="#destacado" class="btn btn-ghost">
+          <i class='bx bx-bot'></i> Ver proyecto con IA
+        </a>
         <a href="#contacto" class="btn btn-ghost">Hablemos</a>
       </div>
     </div>
@@ -104,9 +107,61 @@
       <span class="hero-side-line"></span>
     </div>
 
-    <a href="#sobre-mi" class="scroll-cue" aria-label="Bajar a la siguiente sección">
+    <a href="#destacado" class="scroll-cue" aria-label="Bajar a la siguiente sección">
       <i class='bx bx-chevron-down'></i>
     </a>
+  </section>
+
+  <!-- PROYECTO DESTACADO — lo primero que se ve después del hero -->
+  <section class="spotlight" id="destacado">
+    <div class="section-head reveal">
+      <span class="section-index">★ proyecto destacado</span>
+      <h2>Gimnasio App <span>+ asistente IA</span></h2>
+      <p class="section-sub">PWA real para el gimnasio de un familiar, con un asistente construido sobre la API de Claude.</p>
+    </div>
+
+    <article class="project-card featured spotlight-card reveal">
+      <a class="spotlight-media" href="https://gimnasio-app-livid.vercel.app/" target="_blank" rel="noopener">
+        <img src="images/gimnasio-ia.gif" alt="Demo del asistente IA: el socio genera su plan de entreno y nutrición, y el admin ve el resumen semanal y los avisos redactados por la IA" width="720" height="784" loading="lazy">
+      </a>
+      <div class="spotlight-body">
+          <div class="project-head">
+            <h3>Gimnasio App <span class="ai-badge"><i class='bx bx-bot'></i> con IA</span></h3>
+            <span class="project-status wip">en desarrollo</span>
+          </div>
+          <p>Aplicación web full stack para la gestión de un gimnasio: reservas de clases,
+            tarifas por días/semana y penalización automática por cancelaciones con menos de
+            3 horas de antelación. Panel de administración para pagos, asistencia y alta de
+            usuarios. Ahora con <strong>asistente de inteligencia artificial</strong> integrado
+            mediante la API de Claude (Anthropic):</p>
+          <ul class="ai-features">
+            <li><strong>Coach IA para el socio:</strong> a partir de un cuestionario (objetivo,
+              nivel, alimentación) genera su plan de entreno semanal según su tarifa y
+              sugerencias de nutrición.</li>
+            <li><strong>Resumen semanal para el admin:</strong> la IA analiza ocupación, pagos y
+              gastos y propone recomendaciones de negocio.</li>
+            <li><strong>Reactivación de socios:</strong> detecta socios que han dejado de venir o
+              con la cuota vencida y redacta un aviso que el admin revisa antes de enviar.</li>
+            <li><strong>Respuestas fiables y coste controlado:</strong> salidas estructuradas en
+              JSON (tool use) validadas con Zod, límite de usos por semana y caché de resultados.</li>
+          </ul>
+          <ul class="project-tags">
+            <li>Next.js 14</li><li>TypeScript</li><li>Tailwind CSS</li><li>Prisma</li>
+            <li>PostgreSQL (Supabase)</li><li>NextAuth</li>
+            <li class="tag-ai">API de Claude (Anthropic)</li><li class="tag-ai">IA generativa</li>
+            <li class="tag-ai">Zod</li>
+          </ul>
+          <div class="project-links">
+            <a href="https://gimnasio-app-livid.vercel.app/" target="_blank" rel="noopener">
+              <i class='bx bx-link-external'></i> Probar la demo
+            </a>
+            <a href="https://github.com/Juanfranciscomp30/gimnasio-app#decisiones-técnicas" target="_blank" rel="noopener">
+              <i class='bx bxl-github'></i> Código y decisiones técnicas
+            </a>
+          </div>
+          <p class="project-note">Acceso demo — admin: <code>admin@demo.com</code> / <code>Demo1234</code> · usuario: <code>usuario@demo.com</code> / <code>Demo1234</code></p>
+      </div>
+    </article>
   </section>
 
   <!-- SOBRE MI -->
@@ -285,45 +340,6 @@
     </div>
 
     <div class="project-grid reveal">
-      <!-- proyecto destacado: ocupa toda la fila -->
-      <article class="project-card featured">
-        <div class="project-head">
-          <h3>Gimnasio App <span class="ai-badge"><i class='bx bx-bot'></i> con IA</span></h3>
-          <span class="project-status wip">en desarrollo</span>
-        </div>
-        <p>Aplicación web full stack para la gestión de un gimnasio: reservas de clases,
-          tarifas por días/semana y penalización automática por cancelaciones con menos de
-          3 horas de antelación. Panel de administración para pagos, asistencia y alta de
-          usuarios. Ahora con <strong>asistente de inteligencia artificial</strong> integrado
-          mediante la API de Claude (Anthropic):</p>
-        <ul class="ai-features">
-          <li><strong>Coach IA para el socio:</strong> a partir de un cuestionario (objetivo,
-            nivel, alimentación) genera su plan de entreno semanal según su tarifa y
-            sugerencias de nutrición.</li>
-          <li><strong>Resumen semanal para el admin:</strong> la IA analiza ocupación, pagos y
-            gastos y propone recomendaciones de negocio.</li>
-          <li><strong>Reactivación de socios:</strong> detecta socios que han dejado de venir o
-            con la cuota vencida y redacta un aviso que el admin revisa antes de enviar.</li>
-          <li><strong>Respuestas fiables y coste controlado:</strong> salidas estructuradas en
-            JSON (tool use) validadas con Zod, límite de usos por semana y caché de resultados.</li>
-        </ul>
-        <ul class="project-tags">
-          <li>Next.js 14</li><li>TypeScript</li><li>Tailwind CSS</li><li>Prisma</li>
-          <li>PostgreSQL (Supabase)</li><li>NextAuth</li>
-          <li class="tag-ai">API de Claude (Anthropic)</li><li class="tag-ai">IA generativa</li>
-          <li class="tag-ai">Zod</li>
-        </ul>
-        <div class="project-links">
-          <a href="https://gimnasio-app-livid.vercel.app/" target="_blank" rel="noopener">
-            <i class='bx bx-link-external'></i> Ver demo
-          </a>
-          <a href="https://github.com/Juanfranciscomp30/gimnasio-app" target="_blank" rel="noopener">
-            <i class='bx bxl-github'></i> Ver código
-          </a>
-        </div>
-        <p class="project-note">Acceso demo — admin: <code>admin@demo.com</code> / <code>Demo1234</code> · usuario: <code>usuario@demo.com</code> / <code>Demo1234</code></p>
-      </article>
-
       <article class="project-card">
         <div class="project-head">
           <h3>travelXperience</h3>
