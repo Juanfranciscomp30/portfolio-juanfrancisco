@@ -727,6 +727,51 @@ main > section {
   border-bottom-color: #4fd8c4;
 }
 
+/* --- proyecto ancho con captura (FixFlow) --- */
+.project-card.project-wide {
+  grid-column: 1 / -1; /* ocupa toda la fila del grid */
+  flex-direction: row;
+  gap: 22px;
+}
+
+.project-shot {
+  flex: 0 0 48%;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #2a4152;
+}
+
+.project-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.project-body {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  flex: 1;
+}
+
+/* la nota de la demo, pequena y sin estirarse */
+.project-body .project-note {
+  flex: none;
+  font-size: 11.5px;
+  color: #6c8494;
+}
+
+/* en movil la captura va arriba y el texto debajo */
+@media (max-width: 760px) {
+  .project-card.project-wide {
+    flex-direction: column;
+  }
+
+  .project-shot {
+    flex: none;
+  }
+}
+
 /* --- proyecto destacado (Gimnasio App con IA) --- */
 .project-card.featured {
   grid-column: 1 / -1; /* ocupa toda la fila del grid */
