@@ -1062,3 +1062,44 @@ main > section {
     gap: 20px;
   }
 }
+
+/* ===============================================
+   SEGUNDO PROYECTO DESTACADO (FixFlow)
+   Mismo diseño que el de la IA pero en turquesa,
+   para que no compitan entre sí
+   =============================================== */
+.spotlight-card + .spotlight-card {
+  margin-top: 30px;
+}
+
+.project-card.featured.featured-alt {
+  border-color: #4fd8c4;
+}
+
+.project-card.featured.featured-alt:hover {
+  border-color: #7fe6d7;
+}
+
+.featured-alt .ai-features li::before {
+  color: #4fd8c4;
+}
+
+.test-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: 8px;
+  padding: 3px 9px;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  font-weight: 600;
+  color: #0e1a24;
+  background-color: #4fd8c4;
+  border-radius: 20px;
+  vertical-align: middle;
+}
+
+.project-tags li.tag-test {
+  color: #4fd8c4;
+  border-color: #4fd8c4;
+}

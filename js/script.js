@@ -73,7 +73,7 @@ const cmdCursor = document.getElementById('cmdCursor');
 const outputText = document.getElementById('typedOutput');
 
 const comando = 'whoami';
-const respuesta = 'Frontend / Full Stack dev con base en sistemas y redes: construyo interfaces sólidas, automatizo datos e integro IA en mis proyectos.';
+const respuesta = 'Full Stack dev junior con base en sistemas y redes: interfaces en Angular y React, APIs en Spring Boot, automatización de datos e IA generativa.';
 
 let letraActual = 0;
 

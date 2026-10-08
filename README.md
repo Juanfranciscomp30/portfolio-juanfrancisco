@@ -1,6 +1,6 @@
 # Portfolio — Juan Francisco Morales Plaza
 
-**Desarrollador Frontend (Angular · React · TypeScript)** con base técnica en sistemas y redes, y experiencia en automatización de datos.
+**Desarrollador Full Stack Junior (Angular · Java/Spring Boot · TypeScript · IA)** con base técnica en sistemas y redes, y experiencia en frontend y automatización de datos.
 
 🔗 **Web en vivo:** https://juanfranciscomp30.github.io/portfolio-juanfrancisco/
 
@@ -13,11 +13,12 @@ Portfolio personal construido a mano (sin frameworks ni plantillas), con una est
 ## Secciones
 
 - **Inicio** — presentación con efecto de terminal escribiendo en directo.
-- **Sobre mí** — perfil profesional y formación.
+- **Proyectos destacados** — Gimnasio App con asistente de IA (Next.js + Prisma + Supabase + API de Claude) y FixFlow, gestor de reparaciones con Angular + Spring Boot, tests (JUnit 5, Mockito, Vitest) y CI con GitHub Actions. Ambos con demo en vivo.
+- **Sobre mí** — quién soy, qué he hecho y qué busco.
 - **Trayectoria** — experiencia y educación organizadas en capas desplegables, de la base (sistemas y redes) a lo más reciente (datos y automatización).
-- **Proyectos** — proyectos personales con enlace a su repositorio: una PWA de gestión de gimnasio (Next.js + Prisma + Supabase) y un e-commerce completo (Laravel) hecho como Trabajo de Fin de Grado.
+- **Otros proyectos** — travelXperience (Vue 3 + Pinia) y un e-commerce completo (Laravel) hecho como Trabajo de Fin de Grado.
 - **Stack técnico** — frontend, backend, cloud/datos y herramientas que uso.
-- **Contacto** — formulario y enlaces directos a email, teléfono, LinkedIn y GitHub.
+- **Contacto** — formulario (Web3Forms) y enlaces directos a email, teléfono, LinkedIn y GitHub.
 
 ## Stack técnico de esta web
 
