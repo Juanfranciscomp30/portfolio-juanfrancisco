@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Juan Francisco Morales Plaza — Desarrollador Full Stack Junior (Angular · Java/Spring Boot · IA)</title>
-<meta name="description" content="Portfolio de Juan Francisco Morales Plaza, desarrollador Full Stack junior en Málaga: Angular, Java y Spring Boot, React, Next.js, TypeScript, Python, SQL e integración de IA generativa (API de Claude). Proyectos, experiencia y contacto.">
+<title>Juan Francisco Morales Plaza — Desarrollador Full Stack Junior (Angular + Spring Boot)</title>
+<meta name="description" content="Portfolio de Juan Francisco Morales Plaza, desarrollador Full Stack junior en Málaga especializado en Angular y Java/Spring Boot, con tests, CI y PostgreSQL, e integración de IA generativa (API de Claude). Proyectos, experiencia y contacto.">
 <meta name="author" content="Juan Francisco Morales Plaza">
 
 <!-- vista previa al compartir el enlace (LinkedIn, InfoJobs, WhatsApp...) -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Juan Francisco Morales Plaza — Desarrollador Full Stack Junior">
-<meta property="og:description" content="Angular, Java/Spring Boot, TypeScript y Python. Proyectos full stack con tests, CI e IA generativa. Málaga · remoto.">
+<meta property="og:description" content="Full Stack junior Angular + Java/Spring Boot. Proyectos con tests, CI y demo en vivo, e IA generativa como valor añadido. Málaga · remoto.">
 <meta property="og:url" content="https://juanfranciscomp30.github.io/portfolio-juanfrancisco/">
 <meta property="og:image" content="https://juanfranciscomp30.github.io/portfolio-juanfrancisco/images/portfolioJF.jpg">
 <meta property="og:locale" content="es_ES">
@@ -81,13 +81,12 @@
       <h1 class="hero-title">
         Juan Francisco<br><span>Morales Plaza</span>
       </h1>
-      <h2 class="hero-role">Desarrollador Full Stack Junior — Angular · Java/Spring Boot · TypeScript · IA</h2>
+      <h2 class="hero-role">Desarrollador Full Stack Junior — Angular + Java/Spring Boot</h2>
       <p class="hero-lead">
-        Construyo aplicaciones completas, de la interfaz en Angular o React a la API en
-        Spring Boot y la base de datos, con tests y despliegue automatizado. He trabajado
-        en frontend y en automatización de datos, e integro
-        <strong>inteligencia artificial generativa</strong> en aplicaciones reales.
-        Alhaurín el Grande, Málaga · disponible en remoto o en Málaga.
+        Construyo aplicaciones completas con <strong>Angular</strong> en el frontend y
+        <strong>Java + Spring Boot</strong> en la API, sobre PostgreSQL, con tests y CI.
+        Como valor añadido, sé integrar <strong>IA generativa</strong> (API de Claude) en
+        aplicaciones reales. Alhaurín el Grande, Málaga · disponible en remoto o en Málaga.
       </p>
 
       <div class="hero-actions">
@@ -118,10 +117,53 @@
     <div class="section-head reveal">
       <span class="section-index">★ proyectos destacados</span>
       <h2>Lo que he <span>construido</span></h2>
-      <p class="section-sub">Dos aplicaciones full stack completas y con demo en vivo: una con IA generativa y otra con Angular + Spring Boot, tests y CI.</p>
+      <p class="section-sub">Dos aplicaciones full stack con demo en vivo: FixFlow, mi proyecto principal con Angular + Spring Boot, tests y CI, y una app con IA generativa integrada.</p>
     </div>
 
+    <!-- FixFlow: proyecto principal, el stack Angular + Java que más piden -->
     <article class="project-card featured spotlight-card reveal">
+      <a class="spotlight-media" href="https://fixflow-green.vercel.app" target="_blank" rel="noopener">
+        <img src="images/fixflow-tablero.jpg" alt="Tablero Kanban de FixFlow con las reparaciones repartidas por estado: recibido, en diagnóstico, esperando aprobación, en reparación, listo para recoger y entregado" width="900" height="688" loading="lazy">
+      </a>
+      <div class="spotlight-body">
+        <div class="project-head">
+          <h3>FixFlow <span class="test-badge"><i class='bx bx-check-shield'></i> tests + CI</span></h3>
+          <span class="project-status live">completo</span>
+        </div>
+        <p>Gestor de reparaciones para talleres informáticos: recepción de equipos,
+          seguimiento de cada reparación y métricas del taller. Nace de mi experiencia
+          como técnico reparando equipos.</p>
+        <ul class="ai-features">
+          <li><strong>Tablero Kanban:</strong> arrastrar y soltar con Angular CDK, flujo de
+            estados con historial de cambios y exportación a CSV.</li>
+          <li><strong>API REST segura:</strong> Spring Boot 4 con Spring Security y JWT,
+            roles de administración y de técnico.</li>
+          <li><strong>Datos versionados:</strong> PostgreSQL con migraciones en Flyway y todo
+            el entorno levantado con Docker Compose.</li>
+          <li><strong>Calidad:</strong> 43 tests de backend (JUnit 5, Mockito, MockMvc) y 15 de
+            frontend (Vitest), que se ejecutan en cada push con GitHub Actions.</li>
+        </ul>
+        <ul class="project-tags">
+          <li>Angular 22</li><li>Angular CDK</li><li>Angular Material</li>
+          <li>Java 21</li><li>Spring Boot 4</li><li>Spring Security + JWT</li>
+          <li>PostgreSQL</li><li>Flyway</li><li>Docker</li>
+          <li class="tag-test">JUnit 5</li><li class="tag-test">Mockito</li>
+          <li class="tag-test">Vitest</li><li class="tag-test">GitHub Actions</li>
+        </ul>
+        <div class="project-links">
+          <a href="https://fixflow-green.vercel.app" target="_blank" rel="noopener">
+            <i class='bx bx-link-external'></i> Probar la demo
+          </a>
+          <a href="https://github.com/Juanfranciscomp30/fixflow" target="_blank" rel="noopener">
+            <i class='bx bxl-github'></i> Ver código
+          </a>
+        </div>
+        <p class="project-note">Entra con los botones de demo del login ("Administración" o "Técnico").
+          La API está en un plan gratuito: la primera carga puede tardar unos 30 s.</p>
+      </div>
+    </article>
+    <!-- Gimnasio App: segundo destacado, la IA como valor añadido -->
+    <article class="project-card featured featured-alt spotlight-card reveal">
       <a class="spotlight-media" href="https://gimnasio-app-livid.vercel.app/" target="_blank" rel="noopener">
         <img src="images/gimnasio-ia.gif" alt="Demo del asistente IA: el socio genera su plan de entreno y nutrición, y el admin ve el resumen semanal y los avisos redactados por la IA" width="720" height="784" loading="lazy">
       </a>
@@ -164,48 +206,6 @@
       </div>
     </article>
 
-    <!-- FixFlow: segundo destacado, el stack Angular + Java que más piden -->
-    <article class="project-card featured featured-alt spotlight-card reveal">
-      <a class="spotlight-media" href="https://fixflow-green.vercel.app" target="_blank" rel="noopener">
-        <img src="images/fixflow-tablero.jpg" alt="Tablero Kanban de FixFlow con las reparaciones repartidas por estado: recibido, en diagnóstico, esperando aprobación, en reparación, listo para recoger y entregado" width="900" height="688" loading="lazy">
-      </a>
-      <div class="spotlight-body">
-        <div class="project-head">
-          <h3>FixFlow <span class="test-badge"><i class='bx bx-check-shield'></i> tests + CI</span></h3>
-          <span class="project-status live">completo</span>
-        </div>
-        <p>Gestor de reparaciones para talleres informáticos: recepción de equipos,
-          seguimiento de cada reparación y métricas del taller. Nace de mi experiencia
-          como técnico reparando equipos.</p>
-        <ul class="ai-features">
-          <li><strong>Tablero Kanban:</strong> arrastrar y soltar con Angular CDK, flujo de
-            estados con historial de cambios y exportación a CSV.</li>
-          <li><strong>API REST segura:</strong> Spring Boot 4 con Spring Security y JWT,
-            roles de administración y de técnico.</li>
-          <li><strong>Datos versionados:</strong> PostgreSQL con migraciones en Flyway y todo
-            el entorno levantado con Docker Compose.</li>
-          <li><strong>Calidad:</strong> 43 tests de backend (JUnit 5, Mockito, MockMvc) y 15 de
-            frontend (Vitest), que se ejecutan en cada push con GitHub Actions.</li>
-        </ul>
-        <ul class="project-tags">
-          <li>Angular 22</li><li>Angular CDK</li><li>Angular Material</li>
-          <li>Java 21</li><li>Spring Boot 4</li><li>Spring Security + JWT</li>
-          <li>PostgreSQL</li><li>Flyway</li><li>Docker</li>
-          <li class="tag-test">JUnit 5</li><li class="tag-test">Mockito</li>
-          <li class="tag-test">Vitest</li><li class="tag-test">GitHub Actions</li>
-        </ul>
-        <div class="project-links">
-          <a href="https://fixflow-green.vercel.app" target="_blank" rel="noopener">
-            <i class='bx bx-link-external'></i> Probar la demo
-          </a>
-          <a href="https://github.com/Juanfranciscomp30/fixflow" target="_blank" rel="noopener">
-            <i class='bx bxl-github'></i> Ver código
-          </a>
-        </div>
-        <p class="project-note">Entra con los botones de demo del login ("Administración" o "Técnico").
-          La API está en un plan gratuito: la primera carga puede tardar unos 30 s.</p>
-      </div>
-    </article>
   </section>
 
   <!-- SOBRE MI -->
@@ -241,9 +241,10 @@
           de mi etapa como técnico, y la del gimnasio, de la necesidad de un familiar.
         </p>
         <p>
-          Busco mi siguiente puesto como desarrollador full stack, frontend o de datos,
-          en remoto o en Málaga, en un equipo donde pueda aportar desde el primer día y
-          seguir creciendo.
+          Busco mi siguiente puesto como desarrollador full stack con Angular y
+          Java/Spring Boot, en remoto o en Málaga, en un equipo donde pueda aportar desde el
+          primer día y seguir creciendo. Lo que aprendí en datos (SQL, automatización) y en
+          IA generativa lo aporto como extra.
         </p>
         <p class="about-extra">
           <i class='bx bx-certification'></i> Carta de recomendación disponible (Tour10) &nbsp;·&nbsp;
@@ -421,53 +422,45 @@
 
     <div class="tech-grid reveal">
       <div class="tech-col">
-        <h3><i class='bx bx-window-alt'></i> Frontend</h3>
+        <h3><i class='bx bx-window-alt'></i> Frontend principal</h3>
         <ul class="tech-list">
-          <li>Angular</li><li>Angular Material</li><li>AngularJS</li><li>React</li>
-          <li>Next.js</li><li>Vue.js</li><li>TypeScript</li><li>Tailwind CSS</li>
-          <li>HTML5</li><li>CSS3</li><li>Bootstrap</li><li>jQuery</li>
+          <li>Angular</li><li>TypeScript</li><li>RxJS</li><li>Angular Material</li>
+          <li>Angular CDK</li><li>HTML5</li><li>CSS3</li>
         </ul>
       </div>
       <div class="tech-col">
-        <h3><i class='bx bx-server'></i> Backend</h3>
+        <h3><i class='bx bx-server'></i> Backend principal</h3>
         <ul class="tech-list">
-          <li>Java</li><li>Spring Boot</li><li>Spring Security (JWT)</li>
-          <li>JavaScript</li><li>Node.js</li><li>PHP</li><li>Laravel</li>
-          <li>Prisma</li><li>Python</li><li>APIs REST</li>
-        </ul>
-      </div>
-      <div class="tech-col">
-        <h3><i class='bx bx-bot'></i> Inteligencia Artificial</h3>
-        <ul class="tech-list">
-          <li>API de Claude (Anthropic)</li><li>IA generativa / LLMs</li>
-          <li>Prompt engineering</li><li>Salidas estructuradas (JSON + Zod)</li>
+          <li>Java 21</li><li>Spring Boot</li><li>Spring Security (JWT)</li>
+          <li>Spring Data JPA</li><li>APIs REST</li>
         </ul>
       </div>
       <div class="tech-col">
         <h3><i class='bx bx-data'></i> Datos</h3>
         <ul class="tech-list">
-          <li>SQL</li><li>PostgreSQL</li><li>MySQL / MariaDB</li><li>Flyway</li>
-          <li>Pandas</li><li>Google Colab</li><li>Google Apps Script</li>
+          <li>SQL</li><li>PostgreSQL</li><li>Flyway</li><li>MySQL / MariaDB</li>
         </ul>
       </div>
       <div class="tech-col">
-        <h3><i class='bx bx-cloud'></i> Cloud &amp; DevOps</h3>
-        <ul class="tech-list">
-          <li>AWS</li><li>Docker</li><li>GitHub Actions (CI)</li><li>Supabase</li>
-          <li>Vercel</li><li>Render</li>
-        </ul>
-      </div>
-      <div class="tech-col">
-        <h3><i class='bx bx-check-shield'></i> Testing</h3>
+        <h3><i class='bx bx-check-shield'></i> Calidad y DevOps</h3>
         <ul class="tech-list">
           <li>JUnit 5</li><li>Mockito</li><li>MockMvc</li><li>Vitest</li>
+          <li>Docker</li><li>GitHub Actions (CI)</li><li>Git / GitFlow</li>
         </ul>
       </div>
       <div class="tech-col">
-        <h3><i class='bx bx-terminal'></i> Herramientas</h3>
+        <h3><i class='bx bx-bot'></i> Valor añadido: IA</h3>
         <ul class="tech-list">
-          <li>Git</li><li>GitHub</li><li>Bitbucket</li><li>Jira</li>
-          <li>Confluence</li><li>GitFlow</li><li>Figma</li>
+          <li>API de Claude (Anthropic)</li><li>Salidas estructuradas (JSON + Zod)</li>
+          <li>Prompt engineering</li>
+        </ul>
+      </div>
+      <div class="tech-col">
+        <h3><i class='bx bx-layer'></i> También he trabajado con</h3>
+        <ul class="tech-list">
+          <li>React / Next.js</li><li>Vue 3</li><li>Node.js</li><li>PHP / Laravel</li>
+          <li>Python</li><li>AWS</li><li>Google Apps Script</li><li>Supabase</li>
+          <li>Vercel</li><li>Render</li><li>Jira / Confluence</li>
         </ul>
       </div>
     </div>
