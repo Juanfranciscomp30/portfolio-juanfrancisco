@@ -53,6 +53,7 @@
   <nav class="nav-links" id="navLinks">
     <a href="#inicio" class="nav-link active" data-nav>inicio</a>
     <a href="#sobre-mi" class="nav-link" data-nav>sobre-mí</a>
+    <a href="#metodo" class="nav-link" data-nav>ia-sdd</a>
     <a href="#trayectoria" class="nav-link" data-nav>trayectoria</a>
     <a href="#proyectos" class="nav-link" data-nav>proyectos</a>
     <a href="#stack" class="nav-link" data-nav>stack</a>
@@ -85,13 +86,17 @@
       <p class="hero-lead">
         Construyo aplicaciones completas con <strong>Angular</strong> en el frontend y
         <strong>Java + Spring Boot</strong> en la API, sobre PostgreSQL, con tests y CI.
-        Como valor añadido, sé integrar <strong>IA generativa</strong> (API de Claude) en
-        aplicaciones reales. Alhaurín el Grande, Málaga · disponible en remoto o en Málaga.
+        Trabajo con <strong>desarrollo asistido por IA</strong> siguiendo
+        <strong>SDD</strong>, <strong>TDD</strong> y agentes conectados por <strong>MCP</strong>:
+        yo decido y reviso, la IA implementa. Alhaurín el Grande, Málaga · disponible en remoto o en Málaga.
       </p>
 
       <div class="hero-actions">
         <a href="CV_Juan_Francisco.pdf" class="btn btn-primary" download>
           <i class='bx bx-download'></i> Descargar CV
+        </a>
+        <a href="CV_Juan_Francisco_EN.pdf" class="btn btn-ghost" download>
+          <i class='bx bx-download'></i> CV (EN)
         </a>
         <a href="#destacado" class="btn btn-ghost">
           <i class='bx bx-rocket'></i> Ver proyectos
@@ -243,8 +248,8 @@
         <p>
           Busco mi siguiente puesto como desarrollador full stack con Angular y
           Java/Spring Boot, en remoto o en Málaga, en un equipo donde pueda aportar desde el
-          primer día y seguir creciendo. Lo que aprendí en datos (SQL, automatización) y en
-          IA generativa lo aporto como extra.
+          primer día y seguir creciendo. Lo que aprendí en datos (SQL, automatización) lo aporto
+          como extra, y mi forma de trabajar con IA (SDD, TDD y MCP) la aporto desde el primer día.
         </p>
         <p class="about-extra">
           <i class='bx bx-certification'></i> Carta de recomendación disponible (Tour10) &nbsp;·&nbsp;
@@ -254,10 +259,58 @@
     </div>
   </section>
 
+
+  <!-- COMO TRABAJO CON IA (SDD) -->
+  <section class="method" id="metodo">
+    <div class="section-head reveal">
+      <span class="section-index">02</span>
+      <h2>Cómo trabajo <span>con IA</span></h2>
+      <p class="section-sub">Hoy la IA escribe buena parte del código. Mi trabajo es decidir qué se construye, cómo y con qué garantías. Este es mi flujo, basado en Spec-Driven Development (SDD).</p>
+    </div>
+
+    <ol class="method-flow reveal">
+      <li class="method-step">
+        <span class="method-num">01 · spec.md</span>
+        <h3><i class='bx bx-file'></i> Especificar</h3>
+        <p>Escribo qué hay que construir, para quién y con qué criterios de aceptación. Sin especificación aprobada no se escribe código.</p>
+      </li>
+      <li class="method-step">
+        <span class="method-num">02 · plan + ADR</span>
+        <h3><i class='bx bx-git-branch'></i> Decidir</h3>
+        <p>La IA propone opciones; yo elijo la arquitectura y dejo cada decisión documentada para poder explicarla y defenderla.</p>
+      </li>
+      <li class="method-step">
+        <span class="method-num">03 · agente + MCP</span>
+        <h3><i class='bx bx-bot'></i> Implementar</h3>
+        <p>Claude trabaja conectado al repositorio por MCP, en una rama por funcionalidad, siguiendo la spec y las reglas del proyecto.</p>
+      </li>
+      <li class="method-step">
+        <span class="method-num">04 · TDD + CI</span>
+        <h3><i class='bx bx-check-shield'></i> Verificar</h3>
+        <p>Tests primero. Nada se fusiona sin los tests en verde en GitHub Actions y sin mi revisión del Pull Request.</p>
+      </li>
+    </ol>
+
+    <div class="method-extra reveal">
+      <div class="method-box">
+        <h3><i class='bx bx-wrench'></i> Herramientas</h3>
+        <ul class="tech-list">
+          <li>SDD</li><li>TDD</li><li>MCP</li><li>Claude Code</li><li>Skills</li><li>CLAUDE.md</li>
+          <li>API de Claude</li><li>JSON + Zod</li><li>GitHub Actions</li>
+        </ul>
+      </div>
+      <div class="method-box">
+        <h3><i class='bx bx-bulb'></i> Por qué así</h3>
+        <p>Los límites claros (especificación, reglas del proyecto y tests) hacen que la IA sea fiable. Con <strong>skills</strong> le doy a la IA mis convenciones una sola vez, en lugar de repetirlas en cada petición.</p>
+        <p class="method-proof"><i class='bx bx-check'></i> En práctica: <a href="#destacado">FixFlow</a>, desarrollado con Claude por MCP y con 58 tests en CI.</p>
+      </div>
+    </div>
+  </section>
+
   <!-- TRAYECTORIA — STACK DE SISTEMA (elemento firma) -->
   <section class="journey" id="trayectoria">
     <div class="section-head reveal">
-      <span class="section-index">02</span>
+      <span class="section-index">03</span>
       <h2>Mi <span>trayectoria</span></h2>
       <p class="section-sub">Ordenada como una pila: arriba lo más reciente (datos), debajo el desarrollo web y, en la base, sistemas y redes. Pulsa cada capa para abrirla.</p>
     </div>
@@ -365,7 +418,7 @@
   <!-- PROYECTOS -->
   <section class="projects" id="proyectos">
     <div class="section-head reveal">
-      <span class="section-index">03</span>
+      <span class="section-index">04</span>
       <h2>Otros <span>proyectos</span></h2>
       <p class="section-sub">Más código propio: un frontend con Vue 3 y el e-commerce de mi Trabajo de Fin de Grado.</p>
     </div>
@@ -416,7 +469,7 @@
   <!-- STACK TECNOLOGICO -->
   <section class="techstack" id="stack">
     <div class="section-head reveal">
-      <span class="section-index">04</span>
+      <span class="section-index">05</span>
       <h2>Stack <span>técnico</span></h2>
     </div>
 
@@ -449,8 +502,9 @@
         </ul>
       </div>
       <div class="tech-col">
-        <h3><i class='bx bx-bot'></i> Valor añadido: IA</h3>
+        <h3><i class='bx bx-bot'></i> Desarrollo con IA</h3>
         <ul class="tech-list">
+          <li>SDD</li><li>TDD</li><li>MCP</li><li>Claude Code y skills</li>
           <li>API de Claude (Anthropic)</li><li>Salidas estructuradas (JSON + Zod)</li>
           <li>Prompt engineering</li>
         </ul>
@@ -483,7 +537,7 @@
   <!-- CONTACTO -->
   <section class="contact" id="contacto">
     <div class="section-head reveal">
-      <span class="section-index">05</span>
+      <span class="section-index">06</span>
       <h2>Hablemos</h2>
       <p class="section-sub">¿Un proyecto, una vacante o simplemente charlar de tecnología? Escríbeme.</p>
     </div>

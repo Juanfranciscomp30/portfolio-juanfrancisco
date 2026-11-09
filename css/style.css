@@ -1103,3 +1103,106 @@ main > section {
   color: #4fd8c4;
   border-color: #4fd8c4;
 }
+
+
+/* ===============================================
+   SECCION COMO TRABAJO CON IA (SDD)
+   =============================================== */
+.method-flow {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.method-step {
+  position: relative;
+  background-color: #142430;
+  border: 1px solid #2a4152;
+  border-radius: 12px;
+  padding: 22px 20px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.method-step:hover {
+  border-color: #4fd8c4;
+  transform: translateY(-3px);
+}
+
+.method-step:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  right: -15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ff9d4d;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 16px;
+}
+
+.method-num {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 12px;
+  color: #ff9d4d;
+}
+
+.method-step h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 19px;
+  font-weight: 600;
+  color: #4fd8c4;
+  margin: 8px 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.method-step p {
+  color: #93a9b8;
+  font-size: 14px;
+}
+
+.method-extra {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.method-box {
+  background-color: #142430;
+  border: 1px solid #2a4152;
+  border-radius: 12px;
+  padding: 22px 20px;
+}
+
+.method-box h3 {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  font-weight: 600;
+  color: #4fd8c4;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.method-box p {
+  color: #93a9b8;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.method-proof a {
+  color: #ff9d4d;
+}
+
+@media (max-width: 860px) {
+  .method-flow { grid-template-columns: 1fr 1fr; }
+  .method-step:not(:last-child)::after { display: none; }
+  .method-extra { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .method-flow { grid-template-columns: 1fr; }
+}
